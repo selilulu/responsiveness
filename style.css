@@ -69,7 +69,13 @@ body {
         background: #10375c;
         display:flex;
         float: left;
-        width: 33%;
+        flex-direction : row ;
+        
     }
-}
 
+    .small {flex: 33.33%; background-color:blueviolet;}
+    .medium {flex: 33.33%; align-content: flex-end; background-color: aqua;}
+    .large {flex: 33.33%; background-color: chartreuse;}
+
+
+}
