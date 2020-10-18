@@ -1,0 +1,75 @@
+/*body
+{background-color: blueviolet;
+padding:80 px}
+/* 
+@media screen and (max-width: 479px) {
+    body { background-color: red; }
+        {display: flex;
+        flex-direction:column;}
+    
+    #small{font-size: 12px; font-family:sans-serif ;}
+
+}
+@media screen and (min-width: 480px) and (max-width: 1024px) {
+    body { background-color: green; 
+         display:flex;
+
+
+   }   #medium {font-size: 18px; font-family:Arial;}
+
+    
+}
+@media screen and (min-width: 1024px) {
+    body { background-color: blue; 
+        display: flex;
+        flex-wrap: wrap;
+    }
+      
+    
+    #large {font-size; 30px; font-family:new century;}
+   
+
+}  */
+
+
+body {
+    /* Never get smaller than this*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: #d92027;
+    padding: 2px
+}
+@media only screen and (max-width: 479px) {
+    body { background-color: red; 
+        display: flex;
+        flex-direction:column;}
+    }
+
+/* Medium devices (portrait tablets and large phones, 480px and up) */
+@media only screen and (min-width: 480px) {
+    body {
+        font-size: px;
+        background: #087c03;
+        display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-around;
+
+}
+    .small {flex: 70%; background-color: brown;}
+    .medium {flex: 30%; align-content: flex-end; background-color: aqua;}
+    .large {flex: 100%; background-color: chartreuse;}
+}
+
+
+/* Large devices (large laptops and desktops, 1024px and up) */
+@media only screen and (min-width: 1024px) {
+    body {
+        font-size: 28px;
+        background: #10375c;
+        display:flex;
+        float: left;
+        width: 33%;
+    }
+}
+
